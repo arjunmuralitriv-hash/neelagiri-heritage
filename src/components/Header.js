@@ -61,6 +61,7 @@ export default function Header() {
           {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
+      <div className={`mobile-overlay ${mobileMenuOpen ? 'active' : ''}`} onClick={closeMenu}></div>
     </header>
   );
 }
