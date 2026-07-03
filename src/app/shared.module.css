@@ -1,0 +1,202 @@
+.pageHeader {
+  position: relative;
+  height: 60vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--text-light);
+  margin-bottom: 80px;
+}
+
+.pageOverlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to bottom, rgba(26, 26, 26, 0.4) 0%, rgba(92, 82, 153, 0.6) 100%);
+  z-index: 1;
+}
+
+.pageHeaderContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.pageTitle {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pageSubtitle {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: #f5f5f5;
+  font-style: italic;
+}
+
+.contentSection {
+  padding: 60px 0;
+}
+
+.contentBlock {
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+
+.attractionDistance {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+  background: var(--accent-gold);
+  padding: 4px 12px;
+  border-radius: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(212, 175, 55, 0.3);
+}
+
+.blockTitle {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.blockText {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.listGroup {
+  list-style: none;
+  padding: 0;
+  margin: 30px auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.attractionItem {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  gap: 15px;
+}
+
+.attractionImageWrapper {
+  flex-shrink: 0;
+  width: 160px;
+  height: 100px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.attractionText {
+  flex-grow: 1;
+}
+
+.listGroup li {
+  padding: 15px 0;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 1.1rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+}
+
+.listGroup li::before {
+  content: '✦';
+  color: var(--primary-violet);
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+/* Grid for Gallery/Rooms */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.rowLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(92, 82, 153, 0.08);
+}
+
+.cardContent {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cardContent h3 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--primary-violet);
+  margin-bottom: 15px;
+}
+
+.cardContent p {
+  color: #666;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.attractionList {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.attractionName {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  color: var(--primary-violet);
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.attractionDesc {
+  font-family: var(--font-sans);
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  opacity: 0.8;
+}

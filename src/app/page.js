@@ -1,66 +1,174 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from './page.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
+import { MapPin, BedDouble, Briefcase, Leaf, HeartHandshake, Compass } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className={styles.main}>
+      {/* Hero Section */}
+      <section className={styles.hero}>
+        <div className={styles.heroOverlay}></div>
+        <div className={styles.heroContent}>
+          <h3 className={`${styles.heroSubtitle} fade-in delay-1`}>Hotel Neelagiri Heritage</h3>
+          <h2 className={`${styles.heroSub2} fade-in delay-1`}>A Smart Business Hotel</h2>
+          <h1 className={`${styles.heroTitle} fade-in delay-2`}>Where Heritage Meets Contemporary Comfort</h1>
+          <p className={`${styles.heroText} fade-in delay-3`}>
+            Thoughtfully designed accommodation, warm hospitality, and effortless connectivity in the heart of Kozhikode.
+          </p>
+          <div className={`${styles.heroActions} fade-in delay-3`}>
+            <button className="btn-primary">Book Your Stay</button>
+            <Link href="/heritage"><button className="btn-outline" style={{ borderColor: '#fff', color: '#fff' }}>Explore Our Heritage</button></Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Welcome Section */}
+      <section className={`section container ${styles.welcomeSection}`}>
+        <div className={styles.textCenter}>
+          <span className={styles.sectionOverline}>Welcome</span>
+          <h2 className={styles.sectionTitle}>A Stay Designed Around You</h2>
+          <div className={styles.sectionDivider}></div>
+          <p className={styles.sectionLead}>
+            At Hotel Neelagiri Heritage, every detail reflects our commitment to making travel effortless. Combining modern comforts with gracious hospitality, our hotel offers an ideal retreat for business executives, families, and travellers seeking a refined stay in the heart of Kozhikode.
+          </p>
+          <p className={styles.sectionText}>
+            Just moments from the city's railway station and within easy reach of its commercial, cultural, and culinary landmarks, Hotel Neelagiri Heritage serves as the perfect address for work, relaxation, and onward journeys.
           </p>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className={`section ${styles.whyChooseSection}`}>
+        <div className="container">
+          <div className={styles.textCenter}>
+            <span className={styles.sectionOverline}>Our Promise</span>
+            <h2 className={styles.sectionTitle}>The Hallmark of Hospitality</h2>
+            <div className={styles.sectionDivider}></div>
+          </div>
+          <div className={styles.grid3}>
+            <div className={styles.featureCard}>
+              <div className={styles.featureIcon}><MapPin size={32} strokeWidth={1.5} /></div>
+              <h3>Prime City Location</h3>
+              <p>Situated directly opposite Kozhikode Railway Station for unmatched convenience.</p>
+            </div>
+            <div className={styles.featureCard}>
+              <div className={styles.featureIcon}><BedDouble size={32} strokeWidth={1.5} /></div>
+              <h3>Refined Accommodation</h3>
+              <p>Comfortable rooms and spacious suites designed for productivity and relaxation.</p>
+            </div>
+            <div className={styles.featureCard}>
+              <div className={styles.featureIcon}><Briefcase size={32} strokeWidth={1.5} /></div>
+              <h3>Corporate Friendly</h3>
+              <p>Dedicated boardroom facilities for executive meetings and business discussions.</p>
+            </div>
+            <div className={styles.featureCard}>
+              <div className={styles.featureIcon}><Leaf size={32} strokeWidth={1.5} /></div>
+              <h3>Wellness Experiences</h3>
+              <p>Complement your stay with authentic Ayurvedic therapies at AVVVS Wellness.</p>
+            </div>
+            <div className={styles.featureCard}>
+              <div className={styles.featureIcon}><HeartHandshake size={32} strokeWidth={1.5} /></div>
+              <h3>Personalised Hospitality</h3>
+              <p>Thoughtful service tailored to every guest's needs.</p>
+            </div>
+            <div className={styles.featureCard}>
+              <div className={styles.featureIcon}><Compass size={32} strokeWidth={1.5} /></div>
+              <h3>Seamless Connectivity</h3>
+              <p>Easy access to Kozhikode's business districts, shopping streets, beaches, and the gateway to Wayanad.</p>
+            </div>
+          </div>
         </div>
-      </main>
+      </section>
+
+      {/* Accommodation Preview */}
+      <section className={`section container`}>
+        <div className={styles.textCenter}>
+          <span className={styles.sectionOverline}>Our Spaces</span>
+          <h2 className={styles.sectionTitle}>Sanctuaries of Serenity</h2>
+          <div className={styles.sectionDivider}></div>
+          <p className={styles.sectionLead}>Choose from thoughtfully curated spaces that balance functionality with elegance.</p>
+        </div>
+        <div className={styles.grid3}>
+          <div className={styles.roomCard}>
+            <div className={styles.roomImage} style={{backgroundImage: "url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=800&auto=format&fit=crop')"}}></div>
+            <div className={styles.roomContent}>
+              <h3>Smart Rooms</h3>
+              <p>Contemporary comfort for short business stays and solo travellers.</p>
+              <Link href="/accommodation/smart-rooms" className="btn-outline" style={{ marginTop: 'auto', width: '100%', padding: '10px', textAlign: 'center' }}>View More</Link>
+            </div>
+          </div>
+          <div className={styles.roomCard}>
+            <div className={styles.roomImage} style={{backgroundImage: "url('/images/business-suite.jpg')"}}></div>
+            <div className={styles.roomContent}>
+              <h3>Business Suites</h3>
+              <p>Spacious accommodation designed for executives and extended stays.</p>
+              <Link href="/accommodation/business-suites" className="btn-outline" style={{ marginTop: 'auto', width: '100%', padding: '10px', textAlign: 'center' }}>View More</Link>
+            </div>
+          </div>
+          <div className={styles.roomCard}>
+            <div className={styles.roomImage} style={{backgroundImage: "url('/images/premium-suite.jpg')"}}></div>
+            <div className={styles.roomContent}>
+              <h3>Premium Suite</h3>
+              <p>An elevated experience featuring generous living spaces and refined interiors.</p>
+              <Link href="/accommodation/premium-suite" className="btn-outline" style={{ marginTop: 'auto', width: '100%', padding: '10px', textAlign: 'center' }}>View More</Link>
+            </div>
+          </div>
+        </div>
+        <div className={styles.textCenter} style={{marginTop: '40px'}}>
+          <Link href="/accommodation"><button className="btn-outline">View More</button></Link>
+        </div>
+      </section>
+
+      {/* Wellness Preview */}
+      <section className={`section ${styles.wellnessSection}`}>
+        <div className={styles.wellnessOverlay}></div>
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <div className={styles.textCenter}>
+            <span className={styles.sectionOverlineLight}>Wellness</span>
+            <h2 className={styles.sectionTitleLight}>The Art of Rejuvenation</h2>
+            <div className={styles.sectionDividerLight}></div>
+            <p className={styles.sectionLeadLight}>
+              Enhance your stay with traditional Ayurvedic therapies and personalised wellness experiences at AVVVS Wellness. Rooted in Kerala's rich healing traditions, our wellness centre offers a peaceful escape from the pace of everyday life.
+            </p>
+            <Link href="/wellness"><button className="btn-primary" style={{marginTop: '30px'}}>Discover Wellness</button></Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Discover Kozhikode Preview */}
+      <section className={`section container`}>
+        <div className={styles.kozhikodePreview}>
+          <div className={styles.textLeft}>
+            <span className={styles.sectionOverline}>Destination</span>
+            <h2 className={styles.sectionTitle}>The Soul of Malabar</h2>
+            <div className={styles.sectionDividerLeft}></div>
+            <p className={styles.sectionLead}>
+              From heritage landmarks and bustling shopping streets to serene beaches and authentic Malabar cuisine, Kozhikode offers experiences that leave a lasting impression.
+            </p>
+            <Link href="/kozhikode"><button className="btn-outline" style={{marginTop: '20px'}}>Explore the City</button></Link>
+          </div>
+          <div className={styles.kozhikodeImageWrapper}>
+            <div className={styles.kozhikodeImageDecoration}></div>
+            <div className={styles.kozhikodeImage} style={{backgroundImage: "url('/images/clt.jpg')"}}></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className={`section ${styles.ctaSection}`}>
+        <div className="container">
+          <div className={styles.textCenter}>
+            <span className={styles.sectionOverline}>Visit Us</span>
+            <h2 className={styles.sectionTitle}>Your Journey Begins Here</h2>
+            <div className={styles.sectionDivider}></div>
+            <p className={styles.sectionLead} style={{maxWidth: '800px', margin: '0 auto 40px auto'}}>
+              Whether your journey brings you to Kozhikode for business, leisure, or a brief stop before continuing onward, Hotel Neelagiri Heritage welcomes you with warmth, comfort, and impeccable service.
+            </p>
+            <button className="btn-primary">Book your stay today</button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
