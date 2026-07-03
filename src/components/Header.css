@@ -127,13 +127,11 @@
     right: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.98);
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    display: block;
     padding-top: 100px;
     padding-bottom: 40px;
     overflow-y: auto;
-    gap: 2rem;
+    text-align: center;
     transform: translateY(-100%);
     opacity: 0;
     pointer-events: none;
@@ -150,6 +148,8 @@
   .nav-links a {
     color: var(--text-dark);
     font-size: 1.2rem;
+    display: block;
+    padding: 15px 0;
   }
 
   .header:not(.scrolled) .nav-links a::after {
@@ -158,8 +158,7 @@
 
   .nav-buttons {
     flex-direction: column;
-    margin-left: 0;
-    margin-top: 1rem;
+    margin: 2rem auto 0 auto;
     width: 100%;
     max-width: 250px;
     align-items: stretch;
