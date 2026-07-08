@@ -3,7 +3,18 @@ import styles from '../shared.module.css';
 export default function Heritage() {
   return (
     <main>
-      <header className={styles.pageHeader} style={{backgroundImage: "url('/images/heritage-hero.png')", backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundColor: '#f8f6f0'}}>
+      <header className={styles.pageHeader} style={{
+        backgroundImage: "url('/images/heritage-hero.svg')", 
+        backgroundSize: 'contain', 
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat', 
+        backgroundAttachment: 'scroll',
+        backgroundColor: '#f8f6f0',
+        height: 'auto',
+        minHeight: 'auto',
+        aspectRatio: '5792 / 4304',
+        width: '100%'
+      }}>
         <div className={styles.pageOverlay}></div>
         <div className={styles.pageHeaderContent}>
           <h1 className={`${styles.pageTitle} fade-in delay-1`}>More Than a Hotel. A Living Legacy.</h1>

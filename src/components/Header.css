@@ -125,13 +125,14 @@
     position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
+    height: 100vh;
     left: auto;
-    width: 280px;
+    width: 260px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    padding: 100px 30px 40px 30px;
+    gap: 0;
+    padding: 80px 25px 25px 25px;
     overflow-y: auto;
     text-align: left;
     transform: translateX(100%);
@@ -151,9 +152,9 @@
 
   .nav-links a {
     color: var(--text-dark);
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     display: block;
-    padding: 15px 0;
+    padding: 12px 0;
     border-bottom: 1px solid #f0f0f0;
   }
 
@@ -167,7 +168,7 @@
 
   .nav-buttons {
     flex-direction: column;
-    margin: 2rem 0 0 0;
+    margin: 1.5rem 0 0 0;
     width: 100%;
     align-items: stretch;
   }

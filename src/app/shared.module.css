@@ -201,3 +201,17 @@
   line-height: 1.5;
   opacity: 0.8;
 }
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2.4rem;
+  }
+  
+  .pageSubtitle {
+    font-size: 1.1rem;
+  }
+  
+  .pageHeaderContent {
+    margin-top: 80px; /* Adjust for fixed navbar */
+  }
+}
