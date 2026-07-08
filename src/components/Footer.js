@@ -27,7 +27,7 @@ export default function Footer() {
           <Link href="/">Home</Link>
           <Link href="/heritage">Our Heritage</Link>
           <Link href="/accommodation">Accommodation</Link>
-          <Link href="/wellness">AVVVS Wellness</Link>
+          <Link href="/wellness">Wellness</Link>
           <Link href="/kozhikode">Discover Kozhikode</Link>
           <Link href="/gallery">Gallery</Link>
           <Link href="/contact">Contact</Link>

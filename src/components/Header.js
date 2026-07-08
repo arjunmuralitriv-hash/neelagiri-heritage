@@ -39,7 +39,7 @@ export default function Header() {
         <nav className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
           <Link href="/heritage" onClick={closeMenu}>Our Heritage</Link>
           <Link href="/accommodation" onClick={closeMenu}>Accommodation</Link>
-          <Link href="/wellness" onClick={closeMenu}>AVVVS Wellness</Link>
+          <Link href="/wellness" onClick={closeMenu}>Wellness</Link>
           <Link href="/kozhikode" onClick={closeMenu}>Discover Kozhikode</Link>
           <Link href="/gallery" onClick={closeMenu}>Gallery</Link>
           <Link href="/contact" onClick={closeMenu}>Contact</Link>

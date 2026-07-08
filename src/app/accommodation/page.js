@@ -3,7 +3,7 @@
 import styles from '../shared.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Wifi, Wind, BedDouble, Briefcase, Sparkles, Clock, Plane, Utensils, Presentation, Accessibility } from 'lucide-react';
+import { Wifi, Wind, BedDouble, Briefcase, Sparkles, Clock, Plane, Utensils, Presentation, Accessibility, Users } from 'lucide-react';
 
 export default function Accommodation() {
   return (
@@ -22,10 +22,16 @@ export default function Accommodation() {
             <Image src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=800&auto=format&fit=crop" alt="Smart Room" width={800} height={500} style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
             <div className={styles.cardContent}>
               <h3>Smart Rooms</h3>
-              <p>Perfect for solo travellers and short business visits.</p>
-              <br />
-              <p>Ideal for guests seeking efficiency without compromising comfort.</p>
-              <Link href="/accommodation/smart-rooms" className="btn-outline" style={{ marginTop: 'auto', width: '100%', padding: '10px', textAlign: 'center' }}>View More</Link>
+              <div className={styles.roomSpecs}>
+                <span className={styles.roomSpecItem}><Users size={16} color="var(--primary-violet)" /> 2 Adults</span>
+                <span className={styles.roomSpecItem}><BedDouble size={16} color="var(--primary-violet)" /> King Bed</span>
+                <span className={styles.roomSpecItem}><Wifi size={16} color="var(--primary-violet)" /> Free Wi-Fi</span>
+              </div>
+              <p>Perfect for solo travellers and short business visits seeking efficiency without compromising comfort.</p>
+              <div className={styles.cardActions}>
+                <Link href="/accommodation/smart-rooms" className="btn-outline">View Details</Link>
+                <Link href="#" className="btn-primary">Book Now</Link>
+              </div>
             </div>
           </div>
 
@@ -33,8 +39,16 @@ export default function Accommodation() {
             <Image src="/images/business-suite.jpg" alt="Business Suite" width={800} height={500} style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
             <div className={styles.cardContent}>
               <h3>Business Suites</h3>
+              <div className={styles.roomSpecs}>
+                <span className={styles.roomSpecItem}><Users size={16} color="var(--primary-violet)" /> 2 Adults + 1</span>
+                <span className={styles.roomSpecItem}><BedDouble size={16} color="var(--primary-violet)" /> King Bed</span>
+                <span className={styles.roomSpecItem}><Briefcase size={16} color="var(--primary-violet)" /> Work Desk</span>
+              </div>
               <p>Created for professionals requiring additional space, privacy, and productivity during extended stays.</p>
-              <Link href="/accommodation/business-suites" className="btn-outline" style={{ marginTop: 'auto', width: '100%', padding: '10px', textAlign: 'center' }}>View More</Link>
+              <div className={styles.cardActions}>
+                <Link href="/accommodation/business-suites" className="btn-outline">View Details</Link>
+                <Link href="#" className="btn-primary">Book Now</Link>
+              </div>
             </div>
           </div>
 
@@ -42,8 +56,16 @@ export default function Accommodation() {
             <Image src="/images/premium-suite.jfif" alt="Premium Suite" width={800} height={500} style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
             <div className={styles.cardContent}>
               <h3>Premium Suite</h3>
+              <div className={styles.roomSpecs}>
+                <span className={styles.roomSpecItem}><Users size={16} color="var(--primary-violet)" /> 2 Adults + 1</span>
+                <span className={styles.roomSpecItem}><BedDouble size={16} color="var(--primary-violet)" /> King Bed</span>
+                <span className={styles.roomSpecItem}><Presentation size={16} color="var(--primary-violet)" /> Living Room</span>
+              </div>
               <p>Our finest accommodation offers spacious interiors, elegant furnishings, and an elevated stay experience.</p>
-              <Link href="/accommodation/premium-suite" className="btn-outline" style={{ marginTop: 'auto', width: '100%', padding: '10px', textAlign: 'center' }}>View More</Link>
+              <div className={styles.cardActions}>
+                <Link href="/accommodation/premium-suite" className="btn-outline">View Details</Link>
+                <Link href="#" className="btn-primary">Book Now</Link>
+              </div>
             </div>
           </div>
         </div>

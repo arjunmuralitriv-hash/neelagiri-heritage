@@ -107,16 +107,13 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.roomCard}>
-            <div className={styles.roomImage} style={{backgroundImage: "url('/images/premium-suite.jpg')"}}></div>
+            <div className={styles.roomImage} style={{backgroundImage: "url('/images/premium-suite.jfif')"}}></div>
             <div className={styles.roomContent}>
               <h3>Premium Suite</h3>
               <p>An elevated experience featuring generous living spaces and refined interiors.</p>
               <Link href="/accommodation/premium-suite" className="btn-outline" style={{ marginTop: 'auto', width: '100%', padding: '10px', textAlign: 'center' }}>View More</Link>
             </div>
           </div>
-        </div>
-        <div className={styles.textCenter} style={{marginTop: '40px'}}>
-          <Link href="/accommodation"><button className="btn-outline">View More</button></Link>
         </div>
       </section>
 
@@ -125,11 +122,11 @@ export default function Home() {
         <div className={styles.wellnessOverlay}></div>
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div className={styles.textCenter}>
-            <span className={styles.sectionOverlineLight}>Wellness</span>
-            <h2 className={styles.sectionTitleLight}>The Art of Rejuvenation</h2>
+            <span className={styles.sectionOverlineLight}>Wellness Ecosystem</span>
+            <h2 className={styles.sectionTitleLight}>Wellness Beyond Your Stay</h2>
             <div className={styles.sectionDividerLight}></div>
             <p className={styles.sectionLeadLight}>
-              Enhance your stay with traditional Ayurvedic therapies and personalised wellness experiences at AVVVS Wellness. Rooted in Kerala's rich healing traditions, our wellness centre offers a peaceful escape from the pace of everyday life.
+              Discover a world of authentic Ayurveda, premium wellness, and luxury Ayur-Medi experiences just steps from your room. Three independent wellness brands offer traditional therapies, premium herbal products, and advanced cosmetology.
             </p>
             <Link href="/wellness"><button className="btn-primary" style={{marginTop: '30px'}}>Discover Wellness</button></Link>
           </div>

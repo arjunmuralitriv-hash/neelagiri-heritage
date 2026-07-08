@@ -1,67 +1,77 @@
 import styles from '../../shared.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Wifi, Wind, BedDouble, Briefcase, Sparkles, Users, Sofa } from 'lucide-react';
+import { Wifi, Wind, BedDouble, Briefcase, Sparkles, Users, Sofa, ArrowLeft } from 'lucide-react';
 
 export default function BusinessSuites() {
   return (
-    <main>
-      <header className={styles.pageHeader} style={{backgroundImage: "url('/images/business-suite.jpg')"}}>
-        <div className={styles.pageOverlay}></div>
-        <div className={styles.pageHeaderContent}>
-          <h1 className={`${styles.pageTitle} fade-in delay-1`}>Business Suites</h1>
-        </div>
-      </header>
+    <main className="container">
+      <Link href="/accommodation" className={styles.breadcrumb}>
+        <ArrowLeft size={16} /> Back to Accommodation
+      </Link>
 
-      <section className="container">
-        <div className={styles.contentBlock}>
-          <h2 className={styles.blockTitle}>Spacious & Productive</h2>
-          <p className={styles.blockText}>
+      <section className={styles.luxuryHeroLayout}>
+        <div className={styles.luxuryHeroImage}>
+          <Image 
+            src="/images/business-suite.jpg" 
+            alt="Business Suite" 
+            fill
+            style={{ objectFit: 'cover' }}
+          />
+        </div>
+        
+        <div className={styles.luxuryHeroContent}>
+          <h1 className={styles.luxuryRoomTitle}>Business Suites</h1>
+          
+          <div className={styles.luxurySpecs}>
+            <div className={styles.luxurySpecItem}>
+              <span className={styles.luxurySpecLabel}>Occupancy</span>
+              <span className={styles.luxurySpecValue}><Users size={18} color="var(--primary-violet)" /> 2 Adults + 1 Extra</span>
+            </div>
+            <div className={styles.luxurySpecItem}>
+              <span className={styles.luxurySpecLabel}>Bed</span>
+              <span className={styles.luxurySpecValue}><BedDouble size={18} color="var(--primary-violet)" /> King Size</span>
+            </div>
+          </div>
+          
+          <p className={styles.luxuryDescription}>
             Created for professionals requiring additional space, privacy, and productivity during extended stays. Our Business Suites feature a comfortable, built-in sofa space directly within the bedroom, offering the perfect spot to unwind after a long day of meetings.
           </p>
           
-          <ul style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', listStyle: 'none', padding: 0, marginTop: '40px' }}>
-            <li style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '18px 24px', backgroundColor: '#fff', border: '1px solid #eee', borderRadius: '4px' }}>
-              <div style={{ padding: '10px', backgroundColor: '#f8f8fa', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <BedDouble size={22} color="var(--primary-violet)" />
-              </div>
-              <span style={{ fontWeight: '500' }}>King Size Bed</span>
+          <div className={styles.luxuryActions}>
+            <Link href="#" className="btn-primary">Book Now</Link>
+            <Link href="/contact#enquiry" className="btn-outline">Enquire</Link>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.luxuryDetailsLayout}>
+        <div>
+          <h2 className={styles.luxurySectionTitle}>Overview</h2>
+          <p style={{ color: '#555', lineHeight: '1.8' }}>
+            Elevate your business travel with an environment designed for both work and relaxation. The Business Suite offers an expanded footprint that accommodates an executive work desk and an integrated lounging area. Perfect for those who appreciate room to breathe, prepare for meetings, and retreat in absolute comfort.
+          </p>
+        </div>
+        
+        <div>
+          <h2 className={styles.luxurySectionTitle}>Key Amenities</h2>
+          <ul className={styles.luxuryAmenitiesGrid}>
+            <li className={styles.luxuryAmenityItem}>
+              <Wifi size={20} color="var(--primary-violet)" /> Complimentary Wi-Fi
             </li>
-            <li style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '18px 24px', backgroundColor: '#fff', border: '1px solid #eee', borderRadius: '4px' }}>
-              <div style={{ padding: '10px', backgroundColor: '#f8f8fa', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Users size={22} color="var(--primary-violet)" />
-              </div>
-              <span style={{ fontWeight: '500' }}>Max Occupancy: 2 Adults + 1 Extra</span>
+            <li className={styles.luxuryAmenityItem}>
+              <Wind size={20} color="var(--primary-violet)" /> Air Conditioning
             </li>
-            <li style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '18px 24px', backgroundColor: '#fff', border: '1px solid #eee', borderRadius: '4px' }}>
-              <div style={{ padding: '10px', backgroundColor: '#f8f8fa', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Sofa size={22} color="var(--primary-violet)" />
-              </div>
-              <span style={{ fontWeight: '500' }}>In-Room Sofa Space</span>
+            <li className={styles.luxuryAmenityItem}>
+              <Sofa size={20} color="var(--primary-violet)" /> In-Room Sofa Space
             </li>
-            <li style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '18px 24px', backgroundColor: '#fff', border: '1px solid #eee', borderRadius: '4px' }}>
-              <div style={{ padding: '10px', backgroundColor: '#f8f8fa', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Wifi size={22} color="var(--primary-violet)" />
-              </div>
-              <span style={{ fontWeight: '500' }}>Complimentary Wi-Fi</span>
+            <li className={styles.luxuryAmenityItem}>
+              <Briefcase size={20} color="var(--primary-violet)" /> Executive Work Desk
             </li>
-            <li style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '18px 24px', backgroundColor: '#fff', border: '1px solid #eee', borderRadius: '4px' }}>
-              <div style={{ padding: '10px', backgroundColor: '#f8f8fa', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Wind size={22} color="var(--primary-violet)" />
-              </div>
-              <span style={{ fontWeight: '500' }}>Air Conditioning</span>
-            </li>
-            <li style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '18px 24px', backgroundColor: '#fff', border: '1px solid #eee', borderRadius: '4px' }}>
-              <div style={{ padding: '10px', backgroundColor: '#f8f8fa', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Briefcase size={22} color="var(--primary-violet)" />
-              </div>
-              <span style={{ fontWeight: '500' }}>Executive Work Desk</span>
+            <li className={styles.luxuryAmenityItem}>
+              <Sparkles size={20} color="var(--primary-violet)" /> Daily Housekeeping
             </li>
           </ul>
-
-          <div style={{ marginTop: '50px' }}>
-            <Link href="/contact#enquiry" className="btn-primary" style={{ padding: '16px 40px', fontSize: '1.1rem', display: 'inline-block' }}>Enquire Now</Link>
-          </div>
         </div>
       </section>
     </main>
