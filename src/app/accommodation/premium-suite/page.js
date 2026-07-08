@@ -13,7 +13,7 @@ export default function PremiumSuite() {
       <section className={styles.luxuryHeroLayout}>
         <div className={styles.luxuryHeroImage}>
           <Image 
-            src="/images/premium-suite.jfif" 
+            src="/images/premium-suite.jpg" 
             alt="Premium Suite" 
             fill
             style={{ objectFit: 'cover' }}

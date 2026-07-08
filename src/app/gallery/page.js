@@ -11,7 +11,7 @@ const allImages = [
   
   // Rooms
   { src: '/images/gallery/rooms/business-suite.jpg', alt: 'Business Suite', category: 'Rooms' },
-  { src: '/images/gallery/rooms/premium-suite.jfif', alt: 'Premium Suite', category: 'Rooms' },
+  { src: '/images/gallery/rooms/premium-suite.jpg', alt: 'Premium Suite', category: 'Rooms' },
   
   // City Experiences
   { src: '/images/gallery/city-experiences/beypore.jpg', alt: 'Beypore', category: 'City Experiences' },

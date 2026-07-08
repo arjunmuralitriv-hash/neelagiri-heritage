@@ -113,7 +113,7 @@ export default function Home() {
           </div>
           <div className={styles.roomCard}>
             <div className={styles.roomImage} style={{ position: 'relative' }}>
-              <Image src="/images/premium-suite.jfif" alt="Premium Suite" fill style={{ objectFit: 'cover' }} sizes="(max-width: 900px) 100vw, 33vw" />
+              <Image src="/images/premium-suite.jpg" alt="Premium Suite" fill style={{ objectFit: 'cover' }} sizes="(max-width: 900px) 100vw, 33vw" />
             </div>
             <div className={styles.roomContent}>
               <h3>Premium Suite</h3>
