@@ -10,6 +10,7 @@ export default function Contact() {
     email: '',
     checkIn: '',
     checkOut: '',
+    roomType: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -31,7 +32,7 @@ export default function Contact() {
       });
 
       // 2. Open WhatsApp Web / App
-      const messageText = `Hello Hotel Neelagiri Heritage, I would like to make an enquiry.\n\n*Name:* ${formData.name}\n*Phone:* ${formData.phone}\n*Email:* ${formData.email}\n*Check-in:* ${formData.checkIn}\n*Check-out:* ${formData.checkOut}\n*Message:* ${formData.message}`;
+      const messageText = `Hello Hotel Neelagiri Heritage, I would like to make an enquiry.\n\n*Name:* ${formData.name}\n*Phone:* ${formData.phone}\n*Email:* ${formData.email}\n*Check-in:* ${formData.checkIn}\n*Check-out:* ${formData.checkOut}\n*Room Type:* ${formData.roomType || 'Not specified'}\n*Message:* ${formData.message}`;
       const url = `https://wa.me/918075838228?text=${encodeURIComponent(messageText)}`;
 
       window.open(url, '_blank');
@@ -43,6 +44,7 @@ export default function Contact() {
         email: '',
         checkIn: '',
         checkOut: '',
+        roomType: '',
         message: ''
       });
       alert('Your enquiry has been prepared in WhatsApp. We look forward to hosting you!');
@@ -82,9 +84,20 @@ export default function Contact() {
               </div>
             </div>
 
-            <div>
-              <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', color: '#555' }}>Email Address</label>
-              <input type="email" name="email" value={formData.email} onChange={handleChange} style={{ width: '100%', padding: '12px', border: '1px solid #ddd', borderRadius: '2px', fontFamily: 'inherit' }} />
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+              <div>
+                <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', color: '#555' }}>Email Address</label>
+                <input type="email" name="email" value={formData.email} onChange={handleChange} style={{ width: '100%', padding: '12px', border: '1px solid #ddd', borderRadius: '2px', fontFamily: 'inherit' }} />
+              </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', color: '#555' }}>Room Type</label>
+                <select name="roomType" value={formData.roomType} onChange={handleChange} style={{ width: '100%', padding: '12px', border: '1px solid #ddd', borderRadius: '2px', fontFamily: 'inherit', backgroundColor: 'white' }}>
+                  <option value="">Select a room...</option>
+                  <option value="Smart Room">Smart Room</option>
+                  <option value="Business Suite">Business Suite</option>
+                  <option value="Premium Suite">Premium Suite</option>
+                </select>
+              </div>
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>

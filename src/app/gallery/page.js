@@ -1,7 +1,40 @@
+'use client';
+
+import { useState } from 'react';
 import styles from '../shared.module.css';
 import Image from 'next/image';
 
+const allImages = [
+  // Hotel
+  { src: '/images/gallery/hotel/hero.jpg', alt: 'Hotel Neelagiri Heritage Exterior', category: 'Hotel' },
+  { src: '/images/gallery/hotel/heroenquire.jpg', alt: 'Hotel Interior', category: 'Hotel' },
+  
+  // Rooms
+  { src: '/images/gallery/rooms/business-suite.jpg', alt: 'Business Suite', category: 'Rooms' },
+  { src: '/images/gallery/rooms/premium-suite.jfif', alt: 'Premium Suite', category: 'Rooms' },
+  
+  // City Experiences
+  { src: '/images/gallery/city-experiences/beypore.jpg', alt: 'Beypore', category: 'City Experiences' },
+  { src: '/images/gallery/city-experiences/churam.jpg', alt: 'Churam', category: 'City Experiences' },
+  { src: '/images/gallery/city-experiences/clt.jpg', alt: 'Calicut City', category: 'City Experiences' },
+  { src: '/images/gallery/city-experiences/kappad.jpg', alt: 'Kappad Beach', category: 'City Experiences' },
+  { src: '/images/gallery/city-experiences/kozhikode-beach.jpg', alt: 'Kozhikode Beach', category: 'City Experiences' },
+  { src: '/images/gallery/city-experiences/mananchira.jpg', alt: 'Mananchira Square', category: 'City Experiences' },
+  { src: '/images/gallery/city-experiences/mishkal.jpg', alt: 'Mishkal Mosque', category: 'City Experiences' },
+  { src: '/images/gallery/city-experiences/sarovaram.jpg', alt: 'Sarovaram Biopark', category: 'City Experiences' },
+  { src: '/images/gallery/city-experiences/sm-street.jpg', alt: 'SM Street', category: 'City Experiences' },
+  { src: '/images/gallery/city-experiences/tali.jpg', alt: 'Tali Temple', category: 'City Experiences' },
+];
+
+const categories = ['All', 'Hotel', 'Rooms', 'Wellness', 'Boardroom', 'City Experiences'];
+
 export default function Gallery() {
+  const [activeCategory, setActiveCategory] = useState('All');
+
+  const filteredImages = activeCategory === 'All' 
+    ? allImages 
+    : allImages.filter(img => img.category === activeCategory);
+
   return (
     <main>
       <header className={styles.pageHeader} style={{backgroundImage: "url('https://images.unsplash.com/photo-1542314831-c6a4d14d8c1d?q=80&w=2000&auto=format&fit=crop')"}}>
@@ -16,22 +49,36 @@ export default function Gallery() {
         <div className={styles.contentBlock}>
           <h2 className={styles.blockTitle}>Gallery Categories</h2>
           <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '40px' }}>
-            <button className="btn-outline">Hotel</button>
-            <button className="btn-outline">Rooms</button>
-            <button className="btn-outline">Wellness</button>
-            <button className="btn-outline">Boardroom</button>
-            <button className="btn-outline">City Experiences</button>
+            {categories.map((category) => (
+              <button 
+                key={category}
+                className={activeCategory === category ? 'btn-primary' : 'btn-outline'}
+                onClick={() => setActiveCategory(category)}
+              >
+                {category}
+              </button>
+            ))}
           </div>
         </div>
 
-        {/* Placeholder Photo Grid */}
         <div className={styles.grid} style={{ marginBottom: '80px' }}>
-          <Image src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=600&auto=format&fit=crop" alt="Gallery Image" width={600} height={400} style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '4px' }} />
-          <Image src="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=600&auto=format&fit=crop" alt="Gallery Image" width={600} height={400} style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '4px' }} />
-          <Image src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=600&auto=format&fit=crop" alt="Gallery Image" width={600} height={400} style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '4px' }} />
-          <Image src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=600&auto=format&fit=crop" alt="Gallery Image" width={600} height={400} style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '4px' }} />
-          <Image src="https://images.unsplash.com/photo-1593693397690-362cb9666c40?q=80&w=600&auto=format&fit=crop" alt="Gallery Image" width={600} height={400} style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '4px' }} />
-          <Image src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=600&auto=format&fit=crop" alt="Gallery Image" width={600} height={400} style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '4px' }} />
+          {filteredImages.length > 0 ? (
+            filteredImages.map((image, index) => (
+              <div key={index} style={{ position: 'relative', width: '100%', height: '300px', borderRadius: '4px', overflow: 'hidden', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
+                <Image 
+                  src={image.src} 
+                  alt={image.alt} 
+                  fill
+                  style={{ objectFit: 'cover', transition: 'transform 0.5s ease' }} 
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            ))
+          ) : (
+            <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: '60px', color: '#777', backgroundColor: '#f9f9f9', borderRadius: '8px' }}>
+              <p style={{ fontSize: '1.2rem' }}>More photos coming soon to this category.</p>
+            </div>
+          )}
         </div>
       </section>
     </main>
