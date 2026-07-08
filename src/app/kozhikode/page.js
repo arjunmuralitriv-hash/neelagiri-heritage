@@ -4,7 +4,8 @@ import Image from 'next/image';
 export default function Kozhikode() {
   return (
     <main>
-      <header className={styles.pageHeader} style={{backgroundImage: "url('/images/clt.jpg')"}}>
+      <header className={styles.pageHeader}>
+        <Image src="/images/clt.jpg" alt="Discover Kozhikode" fill style={{ objectFit: 'cover' }} priority />
         <div className={styles.pageOverlay}></div>
         <div className={styles.pageHeaderContent}>
           <h1 className={`${styles.pageTitle} fade-in delay-1`}>Discover the Soul of Kozhikode</h1>

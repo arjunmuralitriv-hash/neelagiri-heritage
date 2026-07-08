@@ -37,7 +37,8 @@ export default function Gallery() {
 
   return (
     <main>
-      <header className={styles.pageHeader} style={{backgroundImage: "url('https://images.unsplash.com/photo-1542314831-c6a4d14d8c1d?q=80&w=2000&auto=format&fit=crop')"}}>
+      <header className={styles.pageHeader}>
+        <Image src="https://images.unsplash.com/photo-1542314831-c6a4d14d8c1d?q=80&w=2000&auto=format&fit=crop" alt="Gallery" fill style={{ objectFit: 'cover' }} priority />
         <div className={styles.pageOverlay}></div>
         <div className={styles.pageHeaderContent}>
           <h1 className={`${styles.pageTitle} fade-in delay-1`}>Moments Worth Remembering</h1>

@@ -1,10 +1,12 @@
 import styles from '../shared.module.css';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Wellness() {
   return (
     <main>
-      <header className={styles.pageHeader} style={{backgroundImage: "url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2000&auto=format&fit=crop')"}}>
+      <header className={styles.pageHeader}>
+        <Image src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2000&auto=format&fit=crop" alt="Wellness" fill style={{ objectFit: 'cover' }} priority />
         <div className={styles.pageOverlay}></div>
         <div className={styles.pageHeaderContent}>
           <h1 className={`${styles.pageTitle} fade-in delay-1`}>Wellness Beyond Your Stay</h1>

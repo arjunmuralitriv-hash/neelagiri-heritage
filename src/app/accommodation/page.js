@@ -8,7 +8,8 @@ import { Wifi, Wind, BedDouble, Briefcase, Sparkles, Clock, Plane, Utensils, Pre
 export default function Accommodation() {
   return (
     <main>
-      <header className={styles.pageHeader} style={{ backgroundImage: "url('https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=2000&auto=format&fit=crop')" }}>
+      <header className={styles.pageHeader}>
+        <Image src="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=2000&auto=format&fit=crop" alt="Accommodation" fill style={{ objectFit: 'cover' }} priority />
         <div className={styles.pageOverlay}></div>
         <div className={styles.pageHeaderContent}>
           <h1 className={`${styles.pageTitle} fade-in delay-1`}>Thoughtfully Designed Spaces</h1>

@@ -8,6 +8,7 @@ export default function Home() {
     <div className={styles.main}>
       {/* Hero Section */}
       <section className={styles.hero}>
+        <Image src="/images/hero.jpg" alt="Hotel Neelagiri Heritage" fill style={{ objectFit: 'cover', transform: 'scale(1.3)' }} priority />
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
           <h3 className={`${styles.heroSubtitle} fade-in delay-1`}>Hotel Neelagiri Heritage</h3>
@@ -91,7 +92,9 @@ export default function Home() {
         </div>
         <div className={styles.grid3}>
           <div className={styles.roomCard}>
-            <div className={styles.roomImage} style={{backgroundImage: "url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=800&auto=format&fit=crop')"}}></div>
+            <div className={styles.roomImage} style={{ position: 'relative' }}>
+              <Image src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=800&auto=format&fit=crop" alt="Smart Rooms" fill style={{ objectFit: 'cover' }} sizes="(max-width: 900px) 100vw, 33vw" />
+            </div>
             <div className={styles.roomContent}>
               <h3>Smart Rooms</h3>
               <p>Contemporary comfort for short business stays and solo travellers.</p>
@@ -99,7 +102,9 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.roomCard}>
-            <div className={styles.roomImage} style={{backgroundImage: "url('/images/business-suite.jpg')"}}></div>
+            <div className={styles.roomImage} style={{ position: 'relative' }}>
+              <Image src="/images/business-suite.jpg" alt="Business Suites" fill style={{ objectFit: 'cover' }} sizes="(max-width: 900px) 100vw, 33vw" />
+            </div>
             <div className={styles.roomContent}>
               <h3>Business Suites</h3>
               <p>Spacious accommodation designed for executives and extended stays.</p>
@@ -107,7 +112,9 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.roomCard}>
-            <div className={styles.roomImage} style={{backgroundImage: "url('/images/premium-suite.jfif')"}}></div>
+            <div className={styles.roomImage} style={{ position: 'relative' }}>
+              <Image src="/images/premium-suite.jfif" alt="Premium Suite" fill style={{ objectFit: 'cover' }} sizes="(max-width: 900px) 100vw, 33vw" />
+            </div>
             <div className={styles.roomContent}>
               <h3>Premium Suite</h3>
               <p>An elevated experience featuring generous living spaces and refined interiors.</p>
@@ -119,6 +126,7 @@ export default function Home() {
 
       {/* Wellness Preview */}
       <section className={`section ${styles.wellnessSection}`}>
+        <Image src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2000&auto=format&fit=crop" alt="Wellness Ecosystem" fill style={{ objectFit: 'cover' }} />
         <div className={styles.wellnessOverlay}></div>
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div className={styles.textCenter}>
@@ -147,7 +155,9 @@ export default function Home() {
           </div>
           <div className={styles.kozhikodeImageWrapper}>
             <div className={styles.kozhikodeImageDecoration}></div>
-            <div className={styles.kozhikodeImage} style={{backgroundImage: "url('/images/clt.jpg')"}}></div>
+            <div className={styles.kozhikodeImage} style={{ position: 'relative' }}>
+              <Image src="/images/clt.jpg" alt="Kozhikode City" fill style={{ objectFit: 'cover' }} sizes="(max-width: 900px) 100vw, 50vw" />
+            </div>
           </div>
         </div>
       </section>

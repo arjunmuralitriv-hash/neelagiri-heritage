@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import styles from '../shared.module.css';
 
 export default function Contact() {
@@ -58,7 +59,8 @@ export default function Contact() {
 
   return (
     <main>
-      <header className={styles.pageHeader} style={{ backgroundImage: "url('/images/heroenquire.jpg')", backgroundPosition: 'center 45%', backgroundAttachment: 'scroll' }}>
+      <header className={styles.pageHeader}>
+        <Image src="/images/heroenquire.jpg" alt="Contact Us" fill style={{ objectFit: 'cover' }} priority />
         <div className={styles.pageOverlay}></div>
         <div className={styles.pageHeaderContent}>
           <h1 className={`${styles.pageTitle} fade-in delay-1`}>We Look Forward to Welcoming You</h1>
