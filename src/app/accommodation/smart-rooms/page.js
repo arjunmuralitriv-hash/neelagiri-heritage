@@ -2,7 +2,7 @@ import styles from '../../shared.module.css';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Smart Rooms | Hotel Neelagiri Heritage',
+  title: 'Smart Rooms | A Smart Business Hotel in Kozhikode',
   description: 'Contemporary comfort for short business stays and solo travellers.',
 };
 import Link from 'next/link';

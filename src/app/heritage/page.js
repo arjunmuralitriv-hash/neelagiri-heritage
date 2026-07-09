@@ -2,7 +2,7 @@ import styles from '../shared.module.css';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Our Heritage | Hotel Neelagiri Heritage',
+  title: 'Our Heritage | A Smart Business Hotel in Kozhikode',
   description: 'Discover the living legacy of Neelagiri Lodge. A landmark in the cultural history of Kozhikode where generations of visionaries found inspiration.',
 };
 
