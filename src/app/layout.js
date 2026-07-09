@@ -14,11 +14,12 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'Hotel Neelagiri Heritage | A Smart Business Hotel in Kozhikode',
-  description: 'Experience the ultimate luxury and heritage at Hotel Neelagiri by Citrine.',
-  icons: {
-    icon: '/favcon.png',
+  metadataBase: new URL('https://neelagiriheritage.com'),
+  title: {
+    template: '%s | A Smart Business Hotel in Kozhikode',
+    default: 'Hotel Neelagiri Heritage | A Smart Business Hotel in Kozhikode',
   },
+  description: 'Experience the ultimate luxury and heritage at Hotel Neelagiri Heritage by Citrine. A Smart Business Hotel located in Kozhikode.',
 };
 
 const jsonLd = {

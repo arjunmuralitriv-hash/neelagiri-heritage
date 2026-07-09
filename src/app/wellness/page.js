@@ -2,7 +2,7 @@ import styles from '../shared.module.css';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Ayurveda Wellness | A Smart Business Hotel in Kozhikode',
+  title: 'Ayurveda Wellness',
   description: 'Discover authentic Ayurveda and premium wellness experiences at Hotel Neelagiri Heritage, featuring AVVVS Ayur Speciality Clinic and Gloveda.',
 };
 import Link from 'next/link';

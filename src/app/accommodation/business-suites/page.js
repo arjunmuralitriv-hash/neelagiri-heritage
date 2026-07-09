@@ -2,7 +2,7 @@ import styles from '../../shared.module.css';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Business Suites | A Smart Business Hotel in Kozhikode',
+  title: 'Business Suites',
   description: 'Spacious luxury accommodation designed for executives and extended stays in Kozhikode.',
 };
 import Link from 'next/link';

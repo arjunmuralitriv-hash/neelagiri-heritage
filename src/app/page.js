@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Hotel Neelagiri Heritage | A Smart Business Hotel in Kozhikode',
+  title: 'Home',
   description: 'Experience the ultimate luxury, heritage, and authentic Ayurveda wellness at Hotel Neelagiri Heritage. A Smart Business Hotel located in Kozhikode.',
 };
 

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Gallery | A Smart Business Hotel in Kozhikode',
+  title: 'Gallery',
   description: 'Explore the moments worth remembering at Hotel Neelagiri Heritage. View our luxury rooms, wellness center, and city experiences.',
 };
 
