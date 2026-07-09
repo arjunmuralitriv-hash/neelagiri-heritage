@@ -4,6 +4,7 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Smart Rooms',
   description: 'Contemporary comfort for short business stays and solo travellers.',
+  alternates: { canonical: '/accommodation/smart-rooms' },
 };
 import Link from 'next/link';
 import { Wifi, Wind, BedDouble, Briefcase, Sparkles, Users, ArrowLeft } from 'lucide-react';

@@ -4,6 +4,7 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Business Suites',
   description: 'Spacious luxury accommodation designed for executives and extended stays in Kozhikode.',
+  alternates: { canonical: '/accommodation/business-suites' },
 };
 import Link from 'next/link';
 import { Wifi, Wind, BedDouble, Briefcase, Sparkles, Users, Sofa, ArrowLeft } from 'lucide-react';

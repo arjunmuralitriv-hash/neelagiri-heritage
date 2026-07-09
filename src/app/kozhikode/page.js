@@ -4,6 +4,7 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Discover Kozhikode',
   description: 'Explore the soul of Malabar. Discover historic landmarks, vibrant markets, serene beaches, and authentic cuisine in Kozhikode.',
+  alternates: { canonical: '/kozhikode' },
 };
 
 export default function Kozhikode() {

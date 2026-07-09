@@ -4,6 +4,7 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Premium Suite',
   description: 'An elevated experience featuring generous living spaces and refined luxury interiors in Kozhikode.',
+  alternates: { canonical: '/accommodation/premium-suite' },
 };
 import Link from 'next/link';
 import { Wifi, Wind, BedDouble, Briefcase, Sparkles, Users, Sofa, Presentation, ArrowLeft } from 'lucide-react';

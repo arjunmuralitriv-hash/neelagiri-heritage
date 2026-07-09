@@ -4,6 +4,7 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Our Heritage',
   description: 'Discover the living legacy of Neelagiri Lodge. A landmark in the cultural history of Kozhikode where generations of visionaries found inspiration.',
+  alternates: { canonical: '/heritage' },
 };
 
 export default function Heritage() {
