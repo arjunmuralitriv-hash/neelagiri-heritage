@@ -72,6 +72,23 @@
   border-top: 1px solid #e0e0e5;
 }
 
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-links a {
+  display: inline-flex;
+  color: var(--primary-violet);
+  transition: var(--transition-smooth);
+}
+
+.social-links a:hover {
+  color: var(--accent-gold);
+  transform: translateY(-3px);
+}
+
 @media (max-width: 900px) {
   .footer-content {
     grid-template-columns: 1fr;

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import './Footer.css';
+import { Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -40,6 +41,11 @@ export default function Footer() {
           <p>Kozhikode – 673002</p>
           <p>+91 8075 838 228</p>
           <p>reservations@neelagiriheritage.com</p>
+          <div className="social-links">
+            <a href="https://www.instagram.com/neelagiriheritage/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <Instagram size={24} />
+            </a>
+          </div>
         </div>
 
         <div className="footer-map">
