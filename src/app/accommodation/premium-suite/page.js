@@ -1,5 +1,10 @@
 import styles from '../../shared.module.css';
 import Image from 'next/image';
+
+export const metadata = {
+  title: 'Premium Suite | Hotel Neelagiri Heritage',
+  description: 'An elevated experience featuring generous living spaces and refined luxury interiors in Kozhikode.',
+};
 import Link from 'next/link';
 import { Wifi, Wind, BedDouble, Briefcase, Sparkles, Users, Sofa, Presentation, ArrowLeft } from 'lucide-react';
 

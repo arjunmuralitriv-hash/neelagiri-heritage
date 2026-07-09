@@ -1,5 +1,10 @@
 import styles from '../../shared.module.css';
 import Image from 'next/image';
+
+export const metadata = {
+  title: 'Business Suites | Hotel Neelagiri Heritage',
+  description: 'Spacious luxury accommodation designed for executives and extended stays in Kozhikode.',
+};
 import Link from 'next/link';
 import { Wifi, Wind, BedDouble, Briefcase, Sparkles, Users, Sofa, ArrowLeft } from 'lucide-react';
 

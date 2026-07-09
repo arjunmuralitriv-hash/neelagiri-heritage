@@ -1,6 +1,12 @@
 import styles from './page.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata = {
+  title: 'Hotel Neelagiri Heritage | Luxury Retreat in Kozhikode',
+  description: 'Experience the ultimate luxury, heritage, and authentic Ayurveda wellness at Hotel Neelagiri Heritage. A Smart Business Hotel located in Kozhikode.',
+};
+
 import { MapPin, BedDouble, Briefcase, Leaf, HeartHandshake, Compass } from 'lucide-react';
 
 export default function Home() {

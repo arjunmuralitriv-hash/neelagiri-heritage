@@ -1,5 +1,10 @@
 import styles from '../../shared.module.css';
 import Image from 'next/image';
+
+export const metadata = {
+  title: 'Smart Rooms | Hotel Neelagiri Heritage',
+  description: 'Contemporary comfort for short business stays and solo travellers.',
+};
 import Link from 'next/link';
 import { Wifi, Wind, BedDouble, Briefcase, Sparkles, Users, ArrowLeft } from 'lucide-react';
 

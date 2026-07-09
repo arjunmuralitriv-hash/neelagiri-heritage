@@ -1,6 +1,11 @@
 import styles from '../shared.module.css';
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Discover Kozhikode | Hotel Neelagiri Heritage',
+  description: 'Explore the soul of Malabar. Discover historic landmarks, vibrant markets, serene beaches, and authentic cuisine in Kozhikode.',
+};
+
 export default function Kozhikode() {
   return (
     <main>
