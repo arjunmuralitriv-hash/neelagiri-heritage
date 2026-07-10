@@ -1,5 +1,6 @@
 import styles from '../../shared.module.css';
 import Image from 'next/image';
+import ImageSlider from '../../../components/ImageSlider';
 
 export const metadata = {
   title: 'Business Suites',
@@ -18,11 +19,11 @@ export default function BusinessSuites() {
 
       <section className={styles.luxuryHeroLayout}>
         <div className={styles.luxuryHeroImage}>
-          <Image 
-            src="/images/business-suite.jpg" 
-            alt="Business Suite" 
-            fill
-            style={{ objectFit: 'cover' }}
+          <ImageSlider 
+            images={[
+              "/images/business-suite.jpg"
+            ]} 
+            altPrefix="Business Suite" 
           />
         </div>
         

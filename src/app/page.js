@@ -100,7 +100,7 @@ export default function Home() {
         <div className={styles.grid3}>
           <div className={styles.roomCard}>
             <div className={styles.roomImage} style={{ position: 'relative' }}>
-              <Image src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=800&auto=format&fit=crop" alt="Smart Rooms" fill style={{ objectFit: 'cover' }} sizes="(max-width: 900px) 100vw, 33vw" />
+              <Image src="/images/gallery/rooms/smart-room-1.jpg" alt="Smart Rooms" fill style={{ objectFit: 'cover' }} sizes="(max-width: 900px) 100vw, 33vw" />
             </div>
             <div className={styles.roomContent}>
               <h3>Smart Rooms</h3>

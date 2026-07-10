@@ -20,7 +20,7 @@ export default function Accommodation() {
       <section className="container">
         <div className={styles.grid} style={{ marginBottom: '80px' }}>
           <div className={styles.card}>
-            <Image src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=800&auto=format&fit=crop" alt="Smart Room" width={800} height={500} style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+            <Image src="/images/gallery/rooms/smart-room-1.jpg" alt="Smart Room" width={800} height={500} style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
             <div className={styles.cardContent}>
               <h3>Smart Rooms</h3>
               <div className={styles.roomSpecs}>

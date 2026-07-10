@@ -1,13 +1,14 @@
 import styles from '../../shared.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
+import { Wifi, Wind, BedDouble, Briefcase, Sparkles, Users, ArrowLeft } from 'lucide-react';
+import ImageSlider from '../../../components/ImageSlider';
 
 export const metadata = {
   title: 'Smart Rooms',
   description: 'Contemporary comfort for short business stays and solo travellers.',
   alternates: { canonical: '/accommodation/smart-rooms' },
 };
-import Link from 'next/link';
-import { Wifi, Wind, BedDouble, Briefcase, Sparkles, Users, ArrowLeft } from 'lucide-react';
 
 export default function SmartRooms() {
   return (
@@ -18,11 +19,12 @@ export default function SmartRooms() {
 
       <section className={styles.luxuryHeroLayout}>
         <div className={styles.luxuryHeroImage}>
-          <Image 
-            src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=2000&auto=format&fit=crop" 
-            alt="Smart Room" 
-            fill
-            style={{ objectFit: 'cover' }}
+          <ImageSlider 
+            images={[
+              "/images/gallery/rooms/smart-room-1.jpg",
+              "/images/gallery/rooms/smart-room-2.jpg"
+            ]} 
+            altPrefix="Smart Room" 
           />
         </div>
         
