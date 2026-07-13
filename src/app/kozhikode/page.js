@@ -11,7 +11,7 @@ export default function Kozhikode() {
   return (
     <main>
       <header className={styles.pageHeader}>
-        <Image src="/images/clt.jpg" alt="Discover Kozhikode" fill style={{ objectFit: 'cover' }} priority />
+        <Image src="/images/clt.webp" alt="Discover Kozhikode" fill style={{ objectFit: 'cover' }} priority />
         <div className={styles.pageOverlay}></div>
         <div className={styles.pageHeaderContent}>
           <h1 className={`${styles.pageTitle} fade-in delay-1`}>Discover the Soul of Kozhikode</h1>
@@ -28,7 +28,7 @@ export default function Kozhikode() {
               <ul className={styles.attractionList}>
                 <li className={styles.attractionItem}>
                   <div className={styles.attractionImageWrapper}>
-                    <Image src="/images/mananchira.jpg" alt="Mananchira Square" fill style={{objectFit: 'cover'}} />
+                    <Image src="/images/mananchira.webp" alt="Mananchira Square" fill style={{objectFit: 'cover'}} />
                   </div>
                   <div className={styles.attractionText}>
                     <div className={styles.attractionName}>Mananchira Square</div>
@@ -38,7 +38,7 @@ export default function Kozhikode() {
                 </li>
                 <li className={styles.attractionItem}>
                   <div className={styles.attractionImageWrapper}>
-                    <Image src="/images/tali.jpg" alt="Tali Shiva Temple" fill style={{objectFit: 'cover'}} />
+                    <Image src="/images/tali.webp" alt="Tali Shiva Temple" fill style={{objectFit: 'cover'}} />
                   </div>
                   <div className={styles.attractionText}>
                     <div className={styles.attractionName}>Tali Shiva Temple</div>
@@ -48,7 +48,7 @@ export default function Kozhikode() {
                 </li>
                 <li className={styles.attractionItem}>
                   <div className={styles.attractionImageWrapper}>
-                    <Image src="/images/mishkal.jpg" alt="Mishkal Mosque" fill style={{objectFit: 'cover'}} />
+                    <Image src="/images/mishkal.webp" alt="Mishkal Mosque" fill style={{objectFit: 'cover'}} />
                   </div>
                   <div className={styles.attractionText}>
                     <div className={styles.attractionName}>Mishkal Mosque</div>
@@ -67,7 +67,7 @@ export default function Kozhikode() {
               <ul className={styles.attractionList}>
                 <li className={styles.attractionItem}>
                   <div className={styles.attractionImageWrapper}>
-                    <Image src="/images/sm-street.jpg" alt="SM Street" fill style={{objectFit: 'cover'}} />
+                    <Image src="/images/sm-street.webp" alt="SM Street" fill style={{objectFit: 'cover'}} />
                   </div>
                   <div className={styles.attractionText}>
                     <div className={styles.attractionName}>SM Street (Mittai Theruvu)</div>
@@ -86,7 +86,7 @@ export default function Kozhikode() {
               <ul className={styles.attractionList}>
                 <li className={styles.attractionItem}>
                   <div className={styles.attractionImageWrapper}>
-                    <Image src="/images/kozhikode-beach.jpg" alt="Kozhikode Beach" fill style={{objectFit: 'cover'}} />
+                    <Image src="/images/kozhikode-beach.webp" alt="Kozhikode Beach" fill style={{objectFit: 'cover'}} />
                   </div>
                   <div className={styles.attractionText}>
                     <div className={styles.attractionName}>Kozhikode Beach</div>
@@ -96,7 +96,7 @@ export default function Kozhikode() {
                 </li>
                 <li className={styles.attractionItem}>
                   <div className={styles.attractionImageWrapper}>
-                    <Image src="/images/beypore.jpg" alt="Beypore Port" fill style={{objectFit: 'cover'}} />
+                    <Image src="/images/beypore.webp" alt="Beypore Port" fill style={{objectFit: 'cover'}} />
                   </div>
                   <div className={styles.attractionText}>
                     <div className={styles.attractionName}>Beypore Port & Beach</div>
@@ -106,7 +106,7 @@ export default function Kozhikode() {
                 </li>
                 <li className={styles.attractionItem}>
                   <div className={styles.attractionImageWrapper}>
-                    <Image src="/images/kappad.jpg" alt="Kappad Beach" fill style={{objectFit: 'cover'}} />
+                    <Image src="/images/kappad.webp" alt="Kappad Beach" fill style={{objectFit: 'cover'}} />
                   </div>
                   <div className={styles.attractionText}>
                     <div className={styles.attractionName}>Kappad Beach</div>
@@ -125,7 +125,7 @@ export default function Kozhikode() {
               <ul className={styles.attractionList}>
                 <li className={styles.attractionItem}>
                   <div className={styles.attractionImageWrapper}>
-                    <Image src="/images/sarovaram.jpg" alt="Sarovaram Biopark" fill style={{objectFit: 'cover'}} />
+                    <Image src="/images/sarovaram.webp" alt="Sarovaram Biopark" fill style={{objectFit: 'cover'}} />
                   </div>
                   <div className={styles.attractionText}>
                     <div className={styles.attractionName}>Sarovaram Biopark</div>
@@ -146,7 +146,7 @@ export default function Kozhikode() {
               <ul className={styles.attractionList}>
                 <li className={styles.attractionItem}>
                   <div className={styles.attractionImageWrapper}>
-                    <Image src="/images/churam.jpg" alt="Thamarassery Churam" fill style={{objectFit: 'cover'}} />
+                    <Image src="/images/churam.webp" alt="Thamarassery Churam" fill style={{objectFit: 'cover'}} />
                   </div>
                   <div className={styles.attractionText}>
                     <div className={styles.attractionName}>Thamarassery Churam</div>

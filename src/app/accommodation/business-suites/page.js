@@ -21,7 +21,7 @@ export default function BusinessSuites() {
         <div className={styles.luxuryHeroImage}>
           <ImageSlider 
             images={[
-              "/images/business-suite.jpg"
+              "/images/business-suite.webp"
             ]} 
             altPrefix="Business Suite" 
           />

@@ -27,7 +27,7 @@ export default function Header() {
         <div className="logo">
           <Link href="/">
             <Image 
-              src="/logo.png" 
+              src="/logo.webp" 
               alt="Hotel Neelagiri Heritage Logo" 
               width={160} 
               height={80} 

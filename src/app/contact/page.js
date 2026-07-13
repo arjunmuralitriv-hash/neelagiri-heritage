@@ -60,7 +60,7 @@ export default function Contact() {
   return (
     <main>
       <header className={styles.pageHeader}>
-        <Image src="/images/heroenquire.jpg" alt="Contact Us" fill style={{ objectFit: 'cover' }} priority />
+        <Image src="/images/heroenquire.webp" alt="Contact Us" fill style={{ objectFit: 'cover' }} priority />
         <div className={styles.pageOverlay}></div>
         <div className={styles.pageHeaderContent}>
           <h1 className={`${styles.pageTitle} fade-in delay-1`}>We Look Forward to Welcoming You</h1>

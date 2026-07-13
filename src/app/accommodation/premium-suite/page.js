@@ -21,7 +21,7 @@ export default function PremiumSuite() {
         <div className={styles.luxuryHeroImage}>
           <ImageSlider 
             images={[
-              "/images/premium-suite.jpg"
+              "/images/premium-suite.webp"
             ]} 
             altPrefix="Premium Suite" 
           />

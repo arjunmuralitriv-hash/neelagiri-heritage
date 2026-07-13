@@ -20,7 +20,7 @@ export default function Accommodation() {
       <section className="container">
         <div className={styles.grid} style={{ marginBottom: '80px' }}>
           <div className={styles.card}>
-            <Image src="/images/gallery/rooms/smart-room-1.jpg" alt="Smart Room" width={800} height={500} style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+            <Image src="/images/gallery/rooms/smart-room-1.webp" alt="Smart Room" width={800} height={500} style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
             <div className={styles.cardContent}>
               <h3>Smart Rooms</h3>
               <div className={styles.roomSpecs}>
@@ -37,7 +37,7 @@ export default function Accommodation() {
           </div>
 
           <div className={styles.card}>
-            <Image src="/images/business-suite.jpg" alt="Business Suite" width={800} height={500} style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+            <Image src="/images/business-suite.webp" alt="Business Suite" width={800} height={500} style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
             <div className={styles.cardContent}>
               <h3>Business Suites</h3>
               <div className={styles.roomSpecs}>
@@ -54,7 +54,7 @@ export default function Accommodation() {
           </div>
 
           <div className={styles.card}>
-            <Image src="/images/premium-suite.jpg" alt="Premium Suite" width={800} height={500} style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+            <Image src="/images/premium-suite.webp" alt="Premium Suite" width={800} height={500} style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
             <div className={styles.cardContent}>
               <h3>Premium Suite</h3>
               <div className={styles.roomSpecs}>

@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="footer-brand">
           <div className="logo-footer">
             <Image 
-              src="/logo.png" 
+              src="/logo.webp" 
               alt="Hotel Neelagiri Heritage Logo" 
               width={250} 
               height={125} 

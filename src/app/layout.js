@@ -39,7 +39,7 @@ const jsonLd = {
   "telephone": "+918075838228",
   "email": "info@neelagiriheritage.com",
   "url": "https://neelagiriheritage.com",
-  "image": "https://neelagiriheritage.com/images/hero.jpg",
+  "image": "https://neelagiriheritage.com/images/hero.webp",
   "checkinTime": "14:00",
   "checkoutTime": "12:00",
   "amenityFeature": [

@@ -21,8 +21,8 @@ export default function SmartRooms() {
         <div className={styles.luxuryHeroImage}>
           <ImageSlider 
             images={[
-              "/images/gallery/rooms/smart-room-1.jpg",
-              "/images/gallery/rooms/smart-room-2.jpg"
+              "/images/gallery/rooms/smart-room-1.webp",
+              "/images/gallery/rooms/smart-room-2.webp"
             ]} 
             altPrefix="Smart Room" 
           />
