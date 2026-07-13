@@ -21,7 +21,10 @@ export default function PremiumSuite() {
         <div className={styles.luxuryHeroImage}>
           <ImageSlider 
             images={[
-              "/images/premium-suite.webp"
+              "/images/gallery/rooms/premium-suite-premium-suite.webp",
+              "/images/gallery/rooms/premium-suite-pm24.webp",
+              "/images/gallery/rooms/premium-suite-pm26.webp",
+              "/images/gallery/rooms/premium-suite-18dc13cc-fcf5-4422-af83-b1cfca101ae1---copy.webp"
             ]} 
             altPrefix="Premium Suite" 
           />

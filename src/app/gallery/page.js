@@ -18,7 +18,6 @@ const allImages = [
 
   // --- Rooms ---
   { src: '/images/gallery/rooms/business-suite.webp', alt: 'Business Suite', category: 'Rooms' },
-  { src: '/images/gallery/rooms/premium-suite.webp', alt: 'Premium Suite', category: 'Rooms' },
   { src: '/images/gallery/rooms/business-suite-bs34.webp', alt: 'Business Suite - BS34', category: 'Rooms' },
   { src: '/images/gallery/rooms/business-suite-bs40.webp', alt: 'Business Suite - BS40', category: 'Rooms' },
   { src: '/images/gallery/rooms/business-suite-bs42.webp', alt: 'Business Suite - BS42', category: 'Rooms' },
