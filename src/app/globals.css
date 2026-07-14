@@ -85,6 +85,11 @@ button {
   box-shadow: 0 8px 25px rgba(148, 142, 193, 0.3);
 }
 
+.btn-primary:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 4px 15px rgba(148, 142, 193, 0.2);
+}
+
 .btn-outline {
   background-color: transparent;
   color: var(--primary-violet);
@@ -118,11 +123,21 @@ button {
   box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
 }
 
+.btn-outline-gold:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+}
+
 .btn-outline:hover {
   background-color: var(--primary-violet);
   color: var(--text-light);
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(92, 82, 153, 0.2);
+}
+
+.btn-outline:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 4px 15px rgba(92, 82, 153, 0.15);
 }
 
 /* Animations */
